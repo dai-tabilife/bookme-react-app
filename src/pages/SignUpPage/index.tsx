@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import tabilifeLogo from "../../assets/images/tabilife-logo.svg";
+import { useState } from "react";
+import bgrSignup from "../../assets/images/bgr-signup.png";
 import iconFacebook from "../../assets/images/icon-facebook.svg";
 import iconGoogle from "../../assets/images/icon-google.svg";
-import bgrSignup from "../../assets/images/bgr-signup.png";
+import tabilifeLogo from "../../assets/images/tabilife-logo.svg";
 import { SignUpModal } from "../../components/Modal/SignUpModal";
 
 export const SignUpPage = () => {
@@ -15,7 +15,7 @@ export const SignUpPage = () => {
     <div className="bg-white px-4 md:pr-0 md:pl-8 flex">
       <div className="w-full md:w-1/2 pb-8 min-h-screen">
         <div className="py-8">
-          <img className="h-8 w-40" src={tabilifeLogo} />
+          <img className="h-8 w-40" src={tabilifeLogo} alt="" />
         </div>
         <div className="flex justify-center items-center">
           <div className="w-[400px] flex flex-col items-center gap-8">
@@ -30,7 +30,7 @@ export const SignUpPage = () => {
             <div className="flex gap-6 self-stretch items-center flex-col">
               <div className="flex flex-col self-stretch gap-3">
                 <button className="flex px-4 py-[10px] justify-center items-center self-stretch gap-3 rounded-lg bg-white border border-gray-300 shadow-gray">
-                  <img className="h-6 w-6" src={iconGoogle} />
+                  <img className="h-6 w-6" src={iconGoogle} alt="" />
                   <div className="font-semibold text-gray-700">
                     Sign in with Google
                   </div>
@@ -38,7 +38,7 @@ export const SignUpPage = () => {
               </div>
               <div className="flex flex-col self-stretch gap-3">
                 <button className="flex px-4 py-[10px] justify-center items-center self-stretch gap-3 rounded-lg bg-white border border-gray-300 shadow-gray">
-                  <img className="h-6 w-6" src={iconFacebook} />
+                  <img className="h-6 w-6" src={iconFacebook} alt="" />
                   <div className="font-semibold text-gray-700">
                     Sign in with Facebook
                   </div>
@@ -126,6 +126,7 @@ export const SignUpPage = () => {
         <img
           className="w-full max-h-screen min-h-full bg-center bg-cover bg-no-repeat flex items-baseline justify-center self-center flex-1 rounded-l-[40px]"
           src={bgrSignup}
+          alt=""
         />
       </div>
     </div>

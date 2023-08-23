@@ -1,13 +1,12 @@
-import React from "react";
-import tabilifeLogo from "../../assets/images/tabilife-logo.svg";
 import { Link } from "react-router-dom";
+import tabilifeLogo from "../../assets/images/tabilife-logo.svg";
 
 export const Header = () => {
   return (
     <div className="w-full backdrop-blur-md fixed bg-gray-60 z-50">
       <div className="m-auto max-w-[1240px] flex justify-between items-center px-8  h-20">
         <div className="flex gap-10 items-center">
-          <img className="h-8 w-40" src={tabilifeLogo} />
+          <img className="h-8 w-40" src={tabilifeLogo} alt="" />
           <div className="flex gap-8">
             <button className="font-semibold flex justify-center items-center gap-2 text-gray-600 py-1">
               Home

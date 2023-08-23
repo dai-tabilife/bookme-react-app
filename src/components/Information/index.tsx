@@ -1,9 +1,8 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import bgrInformation from "../../assets/images/bgr-information.png";
 import iconLanguage from "../../assets/images/icon-language.svg";
-import iconSale from "../../assets/images/icon-sale.svg";
 import iconPhone from "../../assets/images/icon-phone.svg";
-import { Link } from "react-router-dom";
+import iconSale from "../../assets/images/icon-sale.svg";
 
 export const Information = () => {
   const informations = [
@@ -44,6 +43,7 @@ export const Information = () => {
                   <img
                     className="w-[30px] h-[30px] shrink-0"
                     src={item.icon}
+                    alt=""
                   ></img>
                 </div>
                 <p className="text-[22px] leading-8 line-h text-white capitalize font-bold">

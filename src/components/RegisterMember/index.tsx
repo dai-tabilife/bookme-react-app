@@ -1,8 +1,5 @@
-import React from "react";
-import imgTokyo from "../../assets/images/imgTokyo.png";
-import imgKyoto from "../../assets/images/imgKyoto.png";
-import imgOsaka from "../../assets/images/imgOsaka.png";
 import iconBenefit from "../../assets/images/icon-benefit.png";
+import imgTokyo from "../../assets/images/imgTokyo.png";
 
 export const RegisterMember = () => {
   const informations = [
@@ -63,7 +60,7 @@ export const RegisterMember = () => {
                   className="flex justify-center flex-col gap-3 border-b border-white"
                 >
                   <div className="w-16 h-16 p-[12.8] flex flex-col items-center justify-center gap-[12.8] rounded-full border-[0.8px] border-white">
-                    <img src={item.logo} className="w-8 h-8" />
+                    <img src={item.logo} className="w-8 h-8" alt="" />
                   </div>
                   <p className="text-left text-white text-xl font-medium">
                     This is a benefit 1

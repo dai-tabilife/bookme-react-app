@@ -16,7 +16,7 @@ export const About = () => {
           }}
           className=" rounded-2xl border border-white shadow-light30 backdrop-blur-18 flex flex-col justify-center items-center gap-6 p-16"
         >
-          <img src={JHALogo} />
+          <img src={JHALogo} alt=""/>
           <p className="text-white font-bold text-[48px]">
             About Japan Hotel Alliance
           </p>

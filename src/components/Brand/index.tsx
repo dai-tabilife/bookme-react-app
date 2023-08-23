@@ -1,7 +1,3 @@
-import React from "react";
-import imgTokyo from "../../assets/images/imgTokyo.png";
-import imgKyoto from "../../assets/images/imgKyoto.png";
-import imgOsaka from "../../assets/images/imgOsaka.png";
 import iconBrand from "../../assets/images/icon-brand.png";
 
 export const Brand = () => {
@@ -37,7 +33,7 @@ export const Brand = () => {
               key={index}
               className={`flex-1 gap-[10px] self-stretch flex flex-col items-center justify-center ${borderClass} border-white`}
             >
-              <img src={item.logo}></img>
+              <img src={item.logo} alt=""></img>
             </div>
           );
         })}

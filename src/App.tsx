@@ -3,6 +3,7 @@ import "./App.css";
 import { HomePage } from "./pages/HomePage";
 import { Route, Routes } from "react-router-dom";
 import { SignUpPage } from "./pages/SignUpPage";
+import ContextProvider from "./context/contextProvider";
 
 function App() {
   useEffect(() => {
@@ -14,10 +15,12 @@ function App() {
 
   return (
     <div className="App">
+      <ContextProvider>
       <Routes>
         <Route path="/jha/" element={<HomePage />} />
         <Route path="/jha/signup" element={<SignUpPage />} />
       </Routes>
+      </ContextProvider>
     </div>
   );
 }

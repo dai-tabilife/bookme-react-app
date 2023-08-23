@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import iconClose from "../../../assets/images/icon-close.svg";
-import Illustration from "../../../assets/images/Illustration.svg";
 import Modal from "@mui/material/Modal";
+import React from "react";
 import { Link } from "react-router-dom";
+import Illustration from "../../../assets/images/Illustration.svg";
+import iconClose from "../../../assets/images/icon-close.svg";
 
 type SignUpModalProps = {
   isSignUpModal: boolean;
@@ -30,11 +30,11 @@ export const SignUpModal: React.FC<SignUpModalProps> = ({
           className="flex p-6 gap-2 flex-col items-end self-stretch"
           onClick={handleCloseSignUpModal}
         >
-          <img className="w-8 h-8" src={iconClose}></img>
+          <img className="w-8 h-8" src={iconClose} alt=""></img>
         </div>
         <div className="gap-7 flex flex-col self-stretch px-6 pb-6">
           <div className="flex flex-col items-center self-stretch gap-4">
-            <img className="w-[240px] h-[240px]" src={Illustration}></img>
+            <img className="w-[240px] h-[240px]" src={Illustration} alt=""></img>
             <div className="flex flex-col self-stretch gap-4">
               <p className="self-stretch flex-1 text-gray-700 text-2xl font-medium text-center">
                 Thank You For Signing Up

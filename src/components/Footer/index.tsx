@@ -1,4 +1,3 @@
-import React from "react";
 import tabilifeLogo from "../../assets/images/tabilife-logo.svg";
 
 export const Footer = () => {
@@ -16,7 +15,7 @@ export const Footer = () => {
       </div>
       <div className="max-w-[1240px] flex flex-col items-start gap-8 w-full">
         <div className="pt-8 flex justify-between items-center self-stretch border-t border-gray-30">
-          <img className="h-8 w-40" src={tabilifeLogo} />
+          <img className="h-8 w-40" src={tabilifeLogo} alt="" />
           <div className="flex gap-12 items-center">
             <p className="flex gap-12 items-center text-gray-40">
               Terms and conditions
